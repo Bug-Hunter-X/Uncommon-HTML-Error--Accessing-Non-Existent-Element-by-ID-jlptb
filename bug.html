@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Incorrect way to access element by ID
+    document.getElementById("myDiv").innerHTML = "This is a div";
+    //Correct way to access element by ID
+    //let myDiv = document.getElementById("myDiv");
+    //if(myDiv !== null){
+    //  myDiv.innerHTML = "This is a div";
+    //}  
+  </script>
+</body>
+</html>
